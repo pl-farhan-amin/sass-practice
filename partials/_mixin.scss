@@ -1,0 +1,5 @@
+@mixin commonCode($w,$h,$m){
+    width: $w;
+    height: $h;
+    margin: $m;
+}

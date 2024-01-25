@@ -1,0 +1,75 @@
+@import "../partials/mixin";
+@import "../partials/variables";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.flexbox{
+    @include commonCode(70%,60% ,4rem );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-flexbox{
+    display: flex;
+    padding: 1rem;
+}
+
+.profile-pic{
+    @include commonCode(3.5rem,3.5rem,0rem 1rem);
+    img{
+        @include commonCode(100%,100% ,0 );
+        border-radius: 3rem;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.author{
+    font-weight: bold;
+    span{
+        font-weight: normal;
+        color: $light_text;
+    }
+}
+
+.horizontal-card{
+    @include commonCode(27rem,0 ,0 0 0 6rem );
+    display: flex;
+    overflow: hidden;
+    border: 1px solid $border_color;
+    border-radius: 1rem;
+    flex: 1;
+}
+
+.tweet-message{
+    width: 20rem;
+}
+
+.block{
+    @include commonCode(8rem,8rem ,0rem 0.62rem 0rem 0rem );
+    background-color: $border_color;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.content{
+    width: 17rem;
+}
+
+.site{
+    margin-top: 1.5rem;
+    color: $light_text;
+    margin-bottom: 1.3rem;
+}
+
+.title{
+    width: 21rem;
+}
